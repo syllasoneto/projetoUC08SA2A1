@@ -1,0 +1,83 @@
+body {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    display: grid;
+/*     place-items: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 10px;
+    min-height: 700px;
+}
+
+section .logo {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    text-align: center;
+    background-color: bisque;
+}
+
+section .cabecalho {
+    grid-column: 2/span 5;
+    grid-row: 1/span 1;
+    background-color: bisque;
+}
+
+section .busca {
+    grid-column: 1/span 6;
+    grid-row: 2/span 1;
+    text-align: center;
+}
+
+ section .laterale {
+    grid-column: 1/span 1;
+    grid-row: 3/span 2;
+    text-align: left;
+    background-color: bisque;
+}
+
+section .miolo {
+    grid-column: 2/span 5;
+    grid-row: 3/span 2;
+    background-color: bisque;
+}
+
+section .cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .contItem {
+    min-height: 50px;
+}
+
+section .rodape {
+    grid-column: 1/span 6;
+    grid-row: 5/span 1;
+    background-color: bisque;
+}
+
+.buscaForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    max-width: 300px;
+}
+
+.buscaForm .imag{
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    text-align: right;
+}
+
+.buscaForm .campo{
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    text-align: left;
+}
